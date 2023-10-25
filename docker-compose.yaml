@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./database/db:/data/db
+
+  backend:
+    build:
+      context: ./Backend
+    container_name: backend_cont
+    ports:
+      - "8000:8000"
+    links:
+      - mongo
+
+  frontend:
+    build:
+      context: ./Frontend
+    container_name: frontend_cont
+    ports:
+      - "8080:8080"
+
+networks:
+  my-network:
