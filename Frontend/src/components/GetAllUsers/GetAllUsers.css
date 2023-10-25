@@ -1,0 +1,72 @@
+/* GetAllUsers.css */
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Page title styling */
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Table header styling */
+  th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Alternate row coloring */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Table cell styling */
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Edit and Delete button styling */
+  .edit-btn,
+  .delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  /* Edit button styling */
+  .edit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  /* Delete button styling */
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Hover effect for buttons */
+  .edit-btn:hover,
+  .delete-btn:hover {
+    background-color: #1e7e34;
+  }
+  

@@ -1,0 +1,101 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #333;
+    color: white;
+    width: 100%; /* Full width of the screen */
+    position: fixed; /* Fixed position at the top of the screen */
+    top: 0; /* Position at the top */
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    height: 80px;
+    
+  }
+  
+  /* Logo */
+  .logo img {
+    max-height: 70px;
+    width: 80px;
+    border-radius: 50%; 
+    margin-top: 15px;
+  }
+
+  .navbar-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Search input field */
+  .search-input {
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Search button */
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #55616e; /* Change color on hover */
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+  
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+  
+  /* Button styles */
+  .nav-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .nav-buttons button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #0056b3; /* Change color on hover */
+  }
+  
+  /* Log In button */
+  .login-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* Change color on hover */
+  }
+  
